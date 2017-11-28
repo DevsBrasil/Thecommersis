@@ -27,3 +27,5 @@ cs_fixer*
 .env.*
 !.env.local
 \.env\.local
+
+*.cache
