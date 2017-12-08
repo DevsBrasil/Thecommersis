@@ -8,6 +8,10 @@ class HomeController extends BaseController
 {
     public function index()
     {
-        return view('layouts.app');
+        if(is_user_logged_in()){
+            return wp_safe_redirect('/store');
+        }
+
+        return view('pages.home');
     }
 }

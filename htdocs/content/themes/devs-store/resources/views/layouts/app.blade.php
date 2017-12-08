@@ -10,7 +10,7 @@
 </head>
 <body {{ body_class() }}>
  <div id="ds_app">
-    <h1>Olá</h1>
+    @yield('content')
  </div>
 
 {{ wp_footer() }}
